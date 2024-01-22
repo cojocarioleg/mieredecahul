@@ -1,0 +1,148 @@
+/* === about style starts === */
+.about-post {margin: 20px 0;}
+.post-thumbnail {width: 100%;}
+.post-thumbnail img {width: 100%;}
+.post-title {margin: 10px 0;}
+/* === about style ends === */
+
+/* === team page style starts === */
+.team-list-item {
+  display: flex;
+  padding: 20px 0;
+  border-top: 1px solid #DCE5ED;
+  border-bottom: 1px solid #DCE5ED;
+  align-items: center;
+}
+
+.member-img {
+  width: 250px;
+  height: 200px;
+}
+
+.member-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.member-info{padding: 20px;}
+
+.member-info a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s;
+}
+
+.member-info a:hover {color: #FFB11F;}
+
+.member-name {margin-bottom: 10px;}
+.member-function {margin-bottom: 25px;}
+
+.member-links {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 50px;
+  row-gap: 15px;
+}
+
+.links-item a {
+  text-decoration: none;
+  color: #2E2E2E;
+  transition: 0.3s;
+}
+
+.links-item a:hover {
+  color: #FFB11F;
+}
+
+.social-network a {
+  margin-right: 15px;
+}
+/* === team page style ends === */
+
+/* === member page style starts === */
+.profile-header {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.profile-header-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.profile-photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  border: 5px solid #FFF;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  bottom: -75px;
+  transform: translateX(-50%);
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: zoom-in;
+}
+
+.profile-main-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.profile-about {margin-bottom: 20px;}
+
+.contacts-row{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  font-size: 16px;
+  margin-top: 10px;
+}
+/* === member page style starts === */
+/* === adaptive styles === */
+@media screen and (max-width: 960px){
+  .post-title {font-size: 20px;}
+  .member-links {grid-template-columns: auto;}
+  .member-name {font-size: 20px;}
+  .member-function {margin-bottom: 15px;}
+  .profile-header {height: 200px;}
+  .profile-photo {width: 200px;height: 200px;bottom: -50px;}
+  .profile-name h1, .profile-function h1, .profile-about h2 {font-size: 20px;}
+  .contacts-row {grid-template-columns: auto auto; row-gap: 10px;}
+}
+
+@media screen and (max-width: 480px){
+  .post-title {font-size: 18px;}
+  .post-text {font-size: 14px;}
+  .team-list-item {display: block;}
+  .member-img, .member-info {width: 100%; font-size: 14px;}
+  .member-name {font-size: 18px;}
+  .profile-header {height: 100px;}
+  .profile-photo {width: 100px; height: 100px; bottom: -25px;}
+  .profile-main-info {display: block;}
+  .profile-name h1, .profile-function h1, .profile-about h2{font-size: 16px;}
+  .profile-function {font-style: italic; margin-top: 10px;}
+  .profile-about p {font-size: 14px;}
+  .profile-contacts {font-size: 14px;}
+  .profile-contacts h3 {font-size: 16px;}
+  .contacts-row {grid-template-columns: auto;}
+}
+
+@media screen and (max-width: 320px){
+  .post-text,  .member-info, .profile-about p, .profile-contacts p{font-size: 12px;}
+  .post-title, .member-name, .profile-name h1, .profile-function h1, .profile-about h2, .profile-contacts h3{font-size: 14px;}
+  .member-img {height: 150px;}
+  .member-function {margin-bottom: 10px;}
+
+}
+/* === adaptive styles === */

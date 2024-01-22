@@ -1,0 +1,342 @@
+#personal-area-header{
+    margin: 50px auto;
+    font-size: 18px;
+}
+
+.personal-area-header {
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#user-info {margin: 50px 0;}
+
+.pa-tabs {
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+    height: auto;
+  }
+
+  .pers-area-tabs {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    border-bottom: 2px solid #AFAFAF;
+  }
+
+  .pa-tab{
+    text-align: center;
+    cursor: pointer;
+    font-size: 22px;
+    display: inline-block;
+    margin: 0;
+    color: #272727;
+    box-sizing: border-box;
+    padding: 15px 30px;
+    position: relative;
+    top: 2px;
+  }
+
+  .pa-tab a {
+    text-decoration: none;
+    color:#272727;
+  }
+
+  .pa-panels{
+    min-height:200px;
+    width:100%;
+    border-radius:3px;
+    overflow:hidden;
+  }
+  .pa-panel{
+    display:none;
+    animation: fadein .8s;
+  }
+  @keyframes fadein {
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
+  }
+  .panel-title{
+    font-size:1.5em;
+    font-weight:bold
+  }
+  .radio{
+    display:none;
+  }
+
+  #one:checked ~ .pa-panels #one-panel,
+  #two:checked ~ .pa-panels #two-panel,
+  #three:checked ~ .pa-panels #three-panel,
+  #four:checked ~ .pa-panels #four-panel{
+    display:block
+  }
+  #one:checked ~ .pers-area-tabs #one-tab,
+  #two:checked ~ .pers-area-tabs #two-tab,
+  #three:checked ~ .pers-area-tabs #three-tab,
+  #four:checked ~ .pers-area-tabs #four-tab{
+    color: black;
+    border-bottom: 2px solid black;
+  }
+
+  .pa-tabs #one-panel {
+    padding: 0;
+  }
+
+  .personal-details {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .left-side {
+    width: 30%;
+    text-align: center;
+  }
+
+  form .left-side {
+    text-align: left;
+  }
+
+  .left-side-inner {
+    width: 260px;
+  }
+
+  .user-img {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .user-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .right-side {
+    width: 70%;
+    position: relative;
+  }
+
+  .right-side-inner {
+    width: 100%;
+  }
+
+  .user-adress {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    justify-content: space-between;
+  }
+
+  .user-adress p {
+    margin: 10px 0;
+  }
+
+  .left-side input {
+    width: 100%;
+    height: 35px;
+    margin: 5px auto;
+    font-size: 18px;
+  }
+
+  .Neon {
+      font-family: sans-serif;
+      font-size: 14px;
+      color: #494949;
+      position: absolute;
+      transition: 0.3s;
+  }
+
+  .Neon:hover {
+    background-color: rgba(130,130,130,0.3);
+  }
+
+  .Neon * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      background: none;
+  }
+  .Neon-input-dragDrop {
+      display: block;
+      width: 343px;
+      margin: 0 auto 25px auto;
+      padding: 25px;
+      text-align: center;
+      transition: 0.3s;
+  }
+
+  .Neon:hover .Neon-input-dragDrop{
+    color: white;
+  }
+
+  .Neon-input-dragDrop .Neon-input-icon {
+      font-size: 48px;
+      margin-top: -10px;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+  }
+  .Neon-input-text h3 {
+      margin: 0;
+      font-size: 18px;
+  }
+  .Neon-input-text span {
+      font-size: 12px;
+  }
+  .Neon-input-choose-btn.blue {
+      color: #FFFFFF;
+  }
+  .Neon-input-choose-btn {
+      display: inline-block;
+      padding: 8px 14px;
+      outline: none;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      white-space: nowrap;
+      font-size: 12px;
+      font-weight: bold;
+      color: #FFFFFF;
+      background-color: #0F1B28;
+      border-radius: 3px;
+      vertical-align: middle;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      transition: 0.3s;
+  }
+
+  .left-side label {
+    font-size: 18px;
+  }
+
+  .right-side label {
+    font-size: 18px;
+  }
+
+  .right-side select {
+    width: 100%;
+    margin: 5px auto;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .right-side input {
+    width: 100%;
+    height: 35px;
+    margin: 5px auto;
+    font-size: 18px;
+  }
+
+  .right-side input[type="submit"]{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 230px;
+    height: 40px;
+  }
+
+   .delete-account{
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 100%;
+    max-width: 230px;
+    height: 40px;
+    padding: 10px auto;
+    margin: 50px 0 20px auto;
+    font-family: inherit;
+    transition: 0.3s;
+    border-radius: 4px;
+    background-color: #EE4035;
+    cursor: pointer;
+  }
+
+  .delete-account:hover {
+    background-color: #0F1B28;
+  }
+
+  .update-account{
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 100%;
+    max-width: 230px;
+    height: 40px;
+    padding: 10px auto;
+    margin: 50px 0 20px auto;
+    font-family: inherit;
+    transition: 0.3s;
+    border-radius: 4px;
+    background-color: rgb(0, 64, 255);
+    cursor: pointer;
+  }
+
+  .update-account:hover {
+    background-color: #0F1B28;
+  }
+
+  .billing-history-inner {
+    margin-top: 15px;
+  }
+
+  .billing-date-item {
+    border: 1px solid #d0d0d0;
+  }
+
+  .billing-table {
+    margin-bottom: 18px;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .billing-table thead {
+    font-weight: bold;
+  }
+
+  .billing-table td {
+    border: 1px solid #d1d1d1;
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .total-cost {
+    font-size: 20px;
+    text-align: right;
+    margin: 5px;
+  }
+
+.collapsible-button {
+    color: #000;
+}
+
+@media screen and (max-width: 960px){
+
+}
+
+@media screen and (max-width: 760px){
+
+}
+
+@media screen and (max-width: 480px){
+
+}
+
+@media screen and (max-width: 320px){
+
+}
